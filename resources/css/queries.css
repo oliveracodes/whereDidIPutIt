@@ -1,0 +1,450 @@
+/* Big tablets (widths smaller than the 1140px row): from 1024px to 1200px */
+@media only screen and (max-width: 1200px) {
+  .main-nav {
+    width: 980px;
+  }
+
+  .sub-display {
+    font-size: 2.25rem;
+  }
+
+  table {
+    width: 90%;
+    margin: 0.8em auto;
+  }
+
+  thead th,
+  tbody td {
+    font-size: 1rem;
+  }
+
+  .separator,
+  .editBtn,
+  .deleteBtn {
+    font-size: 0.85rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
+
+/* Small tablets in portrait mode to big tablets: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  .main-nav {
+    width: 760px;
+  }
+
+  .letter {
+    font-size: 130%;
+  }
+
+  .mouse-wrap {
+    display: inline-block;
+    position: absolute;
+    right: 40px;
+    top: -15px;
+    cursor: pointer;
+  }
+  
+  .scroll {
+    letter-spacing: 1px;
+    margin-left: 0.5px; /* half of the spacing for it to be central */
+    font-size: 12px;
+  }
+  
+  .mouse {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    animation: nudgeMouse 5.5s ease-out infinite;
+  }
+
+  .search-field {
+    float: right;
+    position: absolute;
+    right: 25px;
+    top: 3px;
+    transform: translate(0);
+  }
+
+  .display {
+    font-size: 2.25rem;
+    line-height: 1;
+  }
+  
+  .items h3 {
+    font-size: 1.2rem;
+  }
+  
+  .item {
+    font-size: 1rem;
+    /* font-size: 0.85rem; */
+  }
+  
+  .item i {    
+    font-size: 0.5rem;
+    width: 15px;
+    height: 15px;
+  }
+
+  .add-box {
+    height: 440px;
+    width: 85%;
+    top: -85px;
+  }
+
+  .add-popup {
+    height: 46px;
+    width: 120px;
+    left: 0;
+    right: 0;
+    top: 70%;
+  }
+  .add-popup.expanded {
+    height: 240px;
+    width: 90%;
+    border-radius: 5px;
+    top: 30%;
+  }
+
+  .content {
+    background: #0984e3 url(../img/add-white.png) center 15% no-repeat;
+    background-size: 60px;
+  }
+  .content.background {
+    background: #0984e3 url(../img/add-white.png) center 10% no-repeat;
+    background-size: 60px;
+  }
+
+  .add-things {
+    height: 20px;
+    font: 500 16px Dosis;
+  }
+
+  #rememberBtn {
+    height: 46px;
+    width: 120px;
+    font: 500 16px Dosis;
+  }
+
+  .sub-display {
+    font-size: 2rem;
+  }
+
+  table {
+    width: 95%;
+    margin: 0.8em auto;
+  }
+
+  thead th,
+  tbody td {
+    font-size: 1rem;
+  }
+
+  .separator,
+  .editBtn,
+  .deleteBtn {
+    font-size: 0.85rem;
+  }
+  
+  .edit-form p {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+   
+  .edit-form-btns {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+
+  footer {
+    font-size: 0.75rem;
+  }
+}
+
+
+
+/* Larger phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  .main-nav {
+    width: 480px;
+  }
+
+  .letter {
+    font-size: 120%;
+    padding-left: 10px;
+  }
+
+  .letter:before, .letter:after {
+    left: 10px;
+  }
+
+  .mouse-wrap {
+    display: none;
+  }
+
+  #add-things .col {
+    width: 100%;
+  }
+
+  #add-things {
+    margin-top: -35px;
+  }
+  
+  .add-container {
+    padding: 0.2rem;
+    background: none;
+  }
+
+  .display {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .items {
+    display: none;
+  }
+
+  .add-box {
+    height: 440px;
+    width: 70%;
+    position: relative;
+    top: 0;
+  }
+
+  .add-popup {
+    height: 46px;
+    width: 120px;
+    left: 0;
+    right: 0;
+    top: 70%;
+  }
+  .add-popup.expanded {
+    height: 230px;
+    width: 80%;
+    top: 35%;
+  }
+
+  .content {
+    background: #0984e3 url(../img/add-white.png) center 15% no-repeat;
+    background-size: 60px;
+  }
+  .content.background {
+    background: #0984e3 url(../img/add-white.png) center 10% no-repeat;
+    background-size: 60px;
+  }
+
+  .add-things {
+    height: 18px;
+    font: 500 15px Dosis;
+  }
+
+  #rememberBtn {
+    height: 46px;
+    width: 120px;
+    font: 500 16px Dosis;
+  }
+
+  #table-section {
+    margin-top: -40px;
+  }
+
+  .sub-display {
+    font-size: 1.75rem;
+  }
+
+  table {
+    width: 100%;
+    margin: 0.8em auto;
+  }
+
+  thead th,
+  tbody td {
+    font-size: 0.8rem;
+  }
+
+  thead th:nth-child(1),
+  tbody td:nth-child(1) {
+    display: none;
+  }
+
+  thead th:nth-child(2),
+  tbody td:nth-child(2) {
+    padding-left: 20px;
+  }
+
+  tbody td:nth-child(2) {
+    font-size: 0.7rem;
+  }
+
+  .separator,
+  .editBtn,
+  .deleteBtn {
+    font-size: 0.65rem;
+  }
+  
+  .edit-form p {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  input.edit-input {
+    width: 100%;
+    font-size: 14px;
+  }
+  
+  .edit-form-btns {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  footer {
+    font-size: 0.7rem;
+  }
+}
+
+
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .main-nav {
+    width: 460px;
+  }
+
+  .letter {
+    font-size: 100%;
+    padding-left: 15px;
+  }
+
+  .letter:before, .letter:after {
+    left: 15px;
+  }
+
+  .mouse-wrap {
+    display: none;
+  }
+
+  .display {
+    font-size: 1.65rem;
+    padding: 0 0.5rem;
+  }
+  
+  .add-box {
+    height: 360px;
+    width: 85%;
+  }
+
+  .content {
+    background: #0984e3 url(../img/add-white.png) center 15% no-repeat;
+    background-size: 50px;
+  }
+  .content.background {
+    background: #0984e3 url(../img/add-white.png) center 10% no-repeat;
+    background-size: 50px;
+  }
+
+  .add-popup {
+    height: 38px;
+    width: 120px;
+    left: 0;
+    right: 0;
+    top: 70%;
+  }
+  .add-popup.expanded {
+    height: 200px;
+    width: 90%;
+    top: 30%;
+  }
+
+  .add-form {
+    margin: 10px auto;
+  }
+
+  .add-things {
+    height: 18px;
+    font: 500 15px Dosis;
+  }
+
+  #rememberBtn {
+    height: 38px;
+    width: 120px;
+    font: 500 15px Dosis;
+  }
+
+  #table-section {
+    margin-top: -60px;
+  }
+
+  .sub-display {
+    font-size: 1.5rem;
+  }
+
+  table {
+    width: 100%;
+    margin: 0.8em auto;
+  }
+
+  thead th,
+  tbody td {
+    font-size: 0.7rem;
+  }
+
+  thead th:nth-child(1),
+  tbody td:nth-child(1),
+  thead th:nth-child(2),
+  tbody td:nth-child(2) {
+    display: none;
+  }
+
+  thead th:nth-child(3),
+  tbody td:nth-child(3) {
+    padding-left: 20px;
+  }
+
+  .separator,
+  .editBtn,
+  .deleteBtn {
+    font-size: 0.6rem;
+  }
+
+  .edit-form {
+    width: 90%;
+  }
+  
+  .edit-form p {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  
+  input.edit-input {
+    font-size: 12px;
+  }
+  
+  .edit-form-btns {
+    font-size: 20px;
+    margin-top: 0;
+  }
+
+  footer {
+    font-size: 0.65rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {  
+  nav {
+    display: none;
+  }
+
+  .display {
+    margin-bottom: 1rem;
+    font-size: 1.65rem;
+    padding: 0 2rem;
+  }
+
+  #table-section {
+    margin-top: -60px;
+  }
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:200,400,600" rel="stylesheet">
+
+  <!-- ENTYPO - ICON FONT -->
+  <link rel="stylesheet" href="vendors/css/entypo.css">
+
+  <!-- MAIN CSS FILES -->
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/queries.css">
+
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="resources/img/favicon.ico" type="image/x-icon">
+
+  <title>Where Did I Put It?</title>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="header">
+    <div class="row">
+      <div class="main-nav">
+        <span class="letter" data-letter="Where">Where Did I Put It?</span>
+
+        <div class="search-field hidden">
+          <div class="search-box">
+            <input type="text" name="search" id="search" placeholder="Search for Items">
+            <span></span>
+          </div>
+        </div>
+
+        <div class="mouse-wrap">
+          <div class="mouse">
+            <div class="frame">
+              <svg version="1.1" id="mouse" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 54.9 91" style="enable-background:new 0 0 54.9 91;" xml:space="preserve">
+                <path id="XMLID_173_" class="st0"
+                  linejoin="round" stroke-linecap="round" stroke-miterlimit="10" d="M27.4,3.6L27.4,3.6C14.2,3.6,3.5,14.3,3.5,27.5v36c0,13.2,10.7,23.9,23.9,23.9h0
+              c13.2,0,23.9-10.7,23.9-23.9v-36C51.4,14.3,40.7,3.6,27.4,3.6z"/>
+              </svg>
+            </div>
+            <div class="mouse-left">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 27.4 91" style="enable-background:new 0 0 27.4 91;" xml:space="preserve">
+                <path 
+                  linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                  class="Draw-Frame Animate-Draw" d="M27.4,87.5L27.4,87.5c-13.2,0-23.9-10.7-23.9-23.9v-36c0-13.2,10.7-23.9,23.9-23.9h0"/>
+              </svg>
+            </div>
+            <div class="mouse-right">
+              <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          viewBox="0 0 27.4 91" style="enable-background:new 0 0 27.4 91;" xml:space="preserve">
+                <path 
+                  linejoin="round" stroke-linecap="round" stroke-miterlimit="10"
+                  class="Draw-Frame Animate-Draw" d="M0,3.6L0,3.6c13.2,0,23.9,10.7,23.9,23.9v36c0,13.2-10.7,23.9-23.9,23.9h0"/>
+              </svg>
+            </div>
+          </div>
+          <p class="scroll">Find&nbsp;Out</p>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <!-- HOME BOX -->
+  <section id="add-things">
+    <div class="add-container">
+      <div class="row">
+        <div class="col span-1-of-2">
+          <h1 class="display deep-shadow"><strong>Never forget</strong> where your stuff is <strong>again!</strong></h1>
+          <br>
+          <div class="items">
+            <h3>Keep track of:</h3>
+            <div class="item">
+              <i class="icon-check"></i> Items you've hidden
+            </div>
+            <div class="item">
+              <i class="icon-check"></i> Items you've lent
+            </div>
+            <div class="item">
+              <i class="icon-check"></i> Items you've put into storage
+            </div>
+            <div class="item">
+              <i class="icon-check"></i> Items you've temporarily stashed
+            </div>
+          </div>
+        </div>
+        <div class="col span-1-of-2 add-form-container">
+          <div class="add-box">
+            <div class="content">
+              <div class="add-popup">
+                <div class="add-things">Add Things</div>
+                <form class="add-form hidden">
+                  <input class="add-input" type="text" id="item-name" placeholder="Thing"/>
+                  <input class="add-input" type="text" id="item-location" placeholder="Thing's Location"/>
+                </form>
+                <button id="rememberBtn" class="hidden"><span class="textBtn">Remember</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- ITEMS TABLE -->
+  <section id="table-section" class="hidden">
+    <div class="row">
+      <div class="col span-2-of-2">
+        <h1 id="table-title" class="sub-display shadow">Items Safely Put: <span id="total-items">0</span> </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col span-2-of-2">
+          <div class="modal-overlay">
+            <div class="modal">
+              <div class="modal-content">
+                <form class="edit-form">
+                  <p>Edit</p>
+                  <input class="edit-input" type="text" id="edit-name" placeholder="Thing"/>
+                  <input class="edit-input" type="text" id="edit-location" placeholder="Thing's Location"/>
+                  <div class="edit-form-btns">
+                    <i class="saveBtn icon-check"></i>
+                    <i class="cancelBtn icon-cancel"></i>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="row">
+      <th class="col span-2-of-2">
+          <table id="table">
+              <thead>
+                <tr>
+                  <th class="shadow">
+                    <i class="icon-list"></i>
+                  </th>
+                  <th class="shadow">
+                    <i class="icon-calendar"></i>
+                  </th>
+                  <th class="shadow">
+                    <i class="icon-tag"></i>
+                  </th>
+                  <th class="shadow">
+                    <i class="icon-address"></i>
+                  </th>
+                  <th class="shadow">
+                    <span class="tooltip" data-tooltip="Clear All">
+                      <i class="clearAllBtn icon-block"></i>
+                    </span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody id="item-list">
+                <!-- <tr class="table-row">
+                  <td>1</td>
+                  <td>April 1st, 2018</td>
+                  <td>Black Panther DVD</td>
+                  <td>Under my bed</td>
+                  <td><i class="editBtn icon-pencil"></i> <i class="separator icon-minus"></i> <i class="deleteBtn icon-trash"></i></td>
+                </tr>
+                <tr class="table-row">
+                  <td>2</td>
+                  <td>April 6th, 2018</td>
+                  <td>T-Shirt</td>
+                  <td>Lent to Tonya</td>
+                  <td><i class="editBtn icon-pencil"></i> <i class="separator icon-minus"></i> <i class="deleteBtn icon-trash"></i></td>
+                </tr>
+                <tr class="table-row">
+                  <td>3</td>
+                  <td>May 1st, 2018</td>
+                  <td>Kindle</td>
+                  <td>At the office</td>
+                  <td><i class="saveBtn icon-check"></i> <i class="separator icon-minus"></i> <i class="cancelBtn icon-cancel"></i></td>
+                </tr>
+                <tr class="table-row">
+                  <td>4</td>
+                  <td>May 6th, 2018</td>
+                  <td>Static Bike</td>
+                  <td>In the storage</td>
+                  <td><i class="saveBtn icon-check"></i> <i class="separator icon-minus"></i> <i class="cancelBtn icon-cancel"></i></td>
+                </tr> -->
+              </tbody>
+            </table>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="row">
+      <strong>
+        <i class="icon-code"></i> with <i class="icon-heart"></i>
+        <br>
+        <small>by <a target="_blank" href="https://oliveracodes.github.io/">Olivera</a></small>
+      </strong>
+    </div>
+  </footer>
+
+
+
+  <!-- SCRIPTS -->
+  <!-- JS FILE FOR CHANGING STYLES -->
+  <script src="resources/js/style.js"></script>
+  <!-- JS FILE FOR THE APP -->
+  <script src="resources/js/app.js"></script>
+
+</body>
+</html>
